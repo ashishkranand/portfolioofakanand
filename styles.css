@@ -1,0 +1,173 @@
+/* Custom CSS styles */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: rgb(212, 212, 212);
+  }
+  
+  .navbar {
+    background-color: #0d1a0f;
+    color: white;
+    width: 100vw;
+    margin-left: -0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  @media screen and (max-width: 775px) {
+    .navbar {
+      margin-left: -6%;
+      flex-direction: column;
+    }
+    .navbar img{
+      margin-left: -6%;
+    }
+    .navbar h3{
+      margin-left: -6%;
+    }
+  }
+
+.fixed-button {
+  position: fixed;
+  left: 0;
+  top: 20%;
+  z-index: 3;
+  transform: translateY(-50%);
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn {
+  color: white;
+  text-decoration: none;
+  /* font-size: 20px; */
+}
+.download-btn i{
+  font-size: 20px;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+  text-decoration: none;
+  color: white;
+}
+  .navbar {
+    font-weight: bold;
+    color: white;
+  }
+  .navbar img{
+    width: 5%;
+    border-radius: 50%;
+  }
+  .nav-link {
+    color: white;
+  }
+  
+  
+  p {
+    text-align: justify;
+  }
+  .navv:hover{
+    color: white;
+    text-decoration: none;
+  }
+  .card {
+    transition: transform 0.2s;
+    cursor: pointer;
+    min-height: 150px;
+    max-height: 180px;
+    overflow: hidden;
+  }
+.education-card{
+  background-color: #e6e1e1;
+}
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    margin-bottom: 30px;
+  }
+  
+  .project {
+    margin-bottom: 30px;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .about-me {
+    margin-top: 30px;
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+  }
+  .social-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .instagram {
+    background-color: red;
+    color: white;
+  }
+  .linkedin {
+    background-color: #0e76a8;
+    color: white;
+  }
+  .github {
+    background-color: #333;
+    color: white;
+  }
+  .gmail {
+    background-color: #dd4b39;
+    color: white;
+  }
+  .phone {
+    background-color: #007bff;
+    color: white;
+  }
+  .social-btn:hover {
+    transform: scale(1.1);
+    color: yellow;
+  }
+  .social-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  .social-btn:hover::before {
+    border-color: darkblue;
+    box-shadow: 2px 3px 4px black;
+  }
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #666;
+  }
+  

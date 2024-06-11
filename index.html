@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashish Kumar Anand - Portfolio</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./styles.css">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+    rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABgFBMVEX///8/UbU9Tq89Tq4+ULX39/fs7Ozd3d3Jycn/QIE6TbT8/Py/vrr5+fnw8PD4u9Dm5uJueLzMzdWzuN1WYKEuRLGEjsw6S6dDUaLxtsr4Pn05SaM1RJg5TLQ3R5/yPXp5gr7or8PapLcwPoozQpPoOnWBicHYo7XdN3Df398xQ6LJmarQNGnLM2ctO4XMz+NIWrrQ0M8kOZzv8Pa3h5fTlKm/KV3TPX2CjMygqNaQmNDHy+Our7FwebHBwcDe3+SnrNC7wOFhcMGVntJUZL1zfb9mcrsaMprf4vCJkMHa3e5mcbJZZayhpcJdZpwhM4ytscm8v9BwdpwWKXo9R4FYT4bMrbqBhqKihqlGTn0AHmooNXjYv8ergpdlWIShir68m6bbr83h0dbCmbdSVJ3FsLeAbqGNc5uffZ15N3fNUXzikay9SYJ/TpzrTofopbzCY4LBU5fHco56QoqyVJ9YSaLAWXuBPIK7PmiWPH/ad5ilPH5SN3rFPH1hN3hBPYgANwi9AAAKQElEQVR4nO3d+V/bRhoHYKzDNlIsaAgI3xibw4YYhJMQAnUgAZaQQAhpji3Zttlus5suSXc3u03THP3Xd0aSdZ/WWCPzmW/7oy358TuadyQcaWSEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhOSihMf9AQYdfmTl5pRXbm7wQ/0l8PzKKucd5hY/xEYATDEp7zDcrdzQEmEF/YCAyNxih5QYDDjExKBAmTiMAzXIMagRuSGsYvAKDulADQccwoEaZoj2iFPDRAwPHLJjkec3Qw3RXhWHhhj2GNSJQzJQQQVDD1GVyE0NQxVtQ5Txjpk4BAOVz1mA1LR3RMtAZRMu5HPsVNk89LYueeZr08uZydsJJ/KsMG8WclvdbtY1XYswVb7N5nAjPMOz6RlLDbuSlHGNJM1wFqGQbGFOGLcIuWymmXZNM2MpefmykOxhahMynDQusG4R0k2bMD18QvCR3QJefgGEGY+PTIQJDBHaX06ESQsR2l9OhEkL7yj0erlVKHm8PIbwnZWdnQmvbG/vm09qVze2PV/+leV6gOfLQXY2Dwb1FfAjnYm91VDn7CoS4cvld9y5e8ij/9MrPyJs7Prt3PEzo305fAf4f+8QNZEfWbnj+I3jCcOs3kV7XY7nJxLkk8PsdRASAbDPC4SDC8PsoyP2fwV0kGGYPTaHhsjnbvd1DXvQYcobOSTXdPhc7mYSgbCKaC498uxhOZnCFDeFYpzCa7yc/86whFlFUUSeTeZRKKe8jeD6cU7YLPvvClO4vehXV/mcsJFcIbMbfZjybHo+qYehPJtG/iMAL6T3kitMTV6OLARn4V8lWhj5kgARYg4REiER4g8Rxi2kYFBtTE6ShBRVBv/RNFpigoQUNTnf2Zleo9EaEyOkKI7ahFvbFluiSKMbq0kRggLud5Ttde7+qSXSyIwJEVJUa0LfYme+BY1oBmsihKCAdw5M2zz4ek2p48UQAuBd22dYebAmQuMFEIIeQR86bXdzGokRuxD2CLdz8AnZGHHKwSyEPWLHY9PbxcitA7dQ6xEu6dxbi9g6sApBj9j23XxnJtq0ilNITe4e+G9+ZOQwUuvAJ3TsES7ptY5+jLiE8DxiJcRONvueVrEJJ/dC7nZ7ur86YhH69AiXsP21DjxCvx7hErl1hDViEIIpZqPffR3MhG6PsQuBb9dxGRowh/dDto74hZO3Iu5vM9xZR9zCsnypImJ2KkrrSKCQmdxD80+W4LQakBirkOmjR7iE3RDFRAo3+uoSDhGOSmKwQzHeUUqVK0cofr7LZ44flirBhmnMQop+WD+JfCgKJ+16o1QqJlCYomix9PjKo0h75Junj6GwUhH9d4hDKDbaj48v97879tE3EAiExSKdPGGP+ORpus+9pZ99e6YAK0XQFP1/bRa7EBBbjecLC0t9GVnpz9+enSljFAABMXFCUMTWg5e12dmFpaUXQthdpX+69pfvALBegmNUDESMv4Zr34/lazXVGGpazTV/uHZtaeHHJ4+Vo1BUiD4DNe6Zprz7cmwsn9eMfw3eHoUXwLe0tDCb//FvD+EoDUaMWVj+fkyOalyAxmC755tPIXBhdrZWy48Bo3og+g7UeFdt9MuxXnTj02aAnbCSWkDwpnwevP95SRN6E2Ne0+ybiIpxyX9a5cEUAwsIgXkZWHulH4neAzXuVVvr1ayT8YWnkc38YC4gOBJLRqFXFWNfl7Yar2rWoerTOuwF/LvcEbWpBiYhQnldWq8/zzsZXaZVXu4RvQKCd+aXnqirNgNQdF2Exy6ExHbbxejQHoWsNsWoBfzHWdtQQlqLy7EYtxCuSwHx9c//tBnhtGptHXzzJ71HyAVc+E5Ztakl1IFu58M41qVi43xxcfnnX8acjKbWwUqWKaZ2/RsAbGtrGpr2JWJYl4pv3lbn5lyMxtbh0CP+dePG614JbUKachqo8ddQ/HehUJWJi8u//mIkaq1DmVZzph4BR+j1325cXV5cfu84SN2qGPtx+Obt6GhBN/7u2jqUZaixgP+5AYGLc9X1dw4TjRsxbuF/C6MwmnH56u/O0ypYhpoLOAsKqACrhdH1N0oRaWvsxHiF9PpoLwajfVqFxiW1gDVzASEQfkufSxUnoZ0Y85rmf59HHYwOrUOJXsBfeyMU+ACwsPhFLqJdaCPGvWorvrEY51SjdVpVkjdMMct6Aavn9Yab0EqMfV1aabx7ay2jpXXke8a83iPUESoXcHTudbvhLrQQ41+XVhr193P2oQqmVbMxr/rkAmojFL7ls3IpynGmsRMxrEsBsf3B2ai3Di2GKUYt4IfepSi3Epr/Qhz/ulQm1v/4WHCaVg2tQymmbYpZ/9TWzyzcgEYihnUpLRYb0HjuNK0aW0evgMYp5qNyYqE0fDeeiYjjlwo0XSyVAPKTaVqt2lqHrYCji1+AT7sc7AXUiTh+bQLPL2Ri/YtlBWBakTv0iLPeCPUHakRMvxiixIpitLeORdXo0CPO5AK6HYKUNRiF8ilGRTG2XVrH9d+uwgIaphjvAtp8PSK+3ybSFWgswdZRdTAuQp4+QpUeoV2dCQRUiBh/X0oXi2odHVqHjJyz9wiXMwq34BVComa0rsghEvjUVcxHzxHq6pOJeH8FXfQyyvVTziPOvHqEFxAQ8f6SnRZF3fhu3WQsKL7RwrmxyYcqoBy8QoaG04ZsbADje711aPHuEb4+3MIUQ4maEdbxfdXsMyxD+wTiFupExVivfzQaqx+0AjosQ4P48At7RG2sGlpHYf2LV48IBsQvNBLVOqrTqrlH9OlLglAn6sZP6z7nEYF9iRAaiPpYfXf+R73uVsAQvmQILUR1XoWJXMCkCFUiTRvqKCdyARMjhETl8wNQr5AVxx4YFpgUISDqiN5odTpNCkFLJUuoV1EzIqhfooSmKkKktXp9AhEJkdzNzEJEwkN29jSDQphiUsiBKSQ3OAfCe6juKogeyKxKKIQnk4iEzsRQKCMPhNv3uqd9sPDC+GXHX0H0EceB2n8BQcr3munI901k05kH6G6jhJIHhY+a0e8MCYRHyIapZaBGBTIPpOhCcCA2pWmEN6GN6jNua/Ik+mEoH4gZdHONgRiK5Sjk7kvgMIwuZNNNaR7h3aApVBVkxG5mHMVT2kC/kLL3Ed5pl0LiSzGtE1BCFDf0lovYPUZKRFBArngiZdJoHrQHp1Ope9pC93AEBAUsT29lM2AiRXJjfT4nQOLRdJlDhoxWP6a8dtrNgk6B6qE7CjF76dmVVpnjuEBPKvEJZyMwXtvljCm3pk+3svCxiuieKgSJTSnbvbT17PT4CuYcPzu6BAoIplGUj03ic2C6AWXMdrvez02NIfCxphIoIOJnXQIiKCNASu5PTY0pkqT4ED29QyfKxvR4E8T9wamDD9x/Wvahf7IXNLKCILg/NjWWgE8wGF8PCeL63NQ4Aj8AP/gnW7s+OXXgGbSMhISEhISEhISEhISEhISEhISEhISEhISEhITkQuf/DhlwKTYRmWQAAAAASUVORK5CYII=">
+</head>
+
+<body>
+
+ 
+  <div class="navbar navv">
+    <img src="data:image/jpeg;base64,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" alt="">
+    <h3>&nbsp;ASHISH KUMAR ANAND</h2>
+  </div>
+  <div class="fixed-button">
+    <a href="https://drive.google.com/file/d/15VjMMBeTxNY6cxJcyLzD96pMYaI8bu0c/view?usp=sharing" download="My_CV.pdf" class="download-btn"><i class="icon-download">&nbsp;CV</i></a>
+</div>
+  <div class="container">
+    <section id="home" class="py-5">
+      <div class="container col-md-10 offset-md-2">
+        <h1>Welcome to My Portfolio</h1>
+        <p>My name is Ashish Kumar Anand, and I currently work as an Assistant Professor at Mandsaur University, Madhya
+          Pradesh. I hold a Master's degree in Computer Applications (MCA) and specialize in web development. My passion
+          lies in creating dynamic and innovative web solutions that enhance user experience and solve real-world
+          problems. With a strong foundation in computer science and years of experience in front-end and back-end
+          development, I aspire to pursue a Ph.D. to further my knowledge and contribute to the field of web
+          development. I am dedicated to continuous learning and growth, both personally and professionally, in this
+          ever-evolving field.</p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+
+      <div class="container col-md-10 offset-md-2">
+        <h2>Education Details</h2>
+        <!-- Education Card -->
+        <div class="card education-card">
+          <div class="card-body">
+            <h5 class="card-title">Master of Computer Science and Application</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Lovely Professional University, Punjab</h6>
+            <p class="card-text">Specialization : Web Development</p>
+            <p class="card-text">Year: 2021 - 2023</p>
+          </div>
+        </div>
+        <!-- Add more education cards as needed -->
+         <br>
+        <div class="card education-card">
+          <div class="card-body">
+            <h5 class="card-title">Bachelor of Computer Science and Application</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Bhupendra Narayan Mandal University, Bihar</h6>
+            <p class="card-text">Specialization : Web Development</p>
+            <p class="card-text">Year: 2017 - 2020</p>
+          </div>
+        </div>
+<br>
+        <div class="card education-card">
+          <div class="card-body">
+            <h5 class="card-title">12<sup>th</sup></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Bihar School Examination Board, Patna</h6>
+            <p class="card-text">Year: 2015 - 2017</p>
+          </div>
+        </div>
+<br>
+        <div class="card education-card">
+          <div class="card-body">
+            <h5 class="card-title">10<sup>th</sup></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Bihar School Examination Board, Patna</h6>
+            <p class="card-text">Year: 2015</p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <section id="experience" class="py-5">
+      <div class="container col-md-10 offset-md-2">
+        <h2>Experiences</h2>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h4 class="card-title">Khatabook</h5>
+                  <h6 class="card-subtitle mb-2 "> Location : Bangalore, India</h6>
+                  <p class="card-text">Duration : 5 Months</p>
+                  <p class="card-text">Role : Lending Inbound Executive</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-success text-white">
+              <div class="card-body">
+                <h4 class="card-title">Techwin Labs LLP</h5>
+                  <h6 class="card-subtitle mb-2 "> Location : Mohali, India</h6>
+                  <p class="card-text">Duration : 1 Month</p>
+                  <p class="card-text">Role : Php Developer Trainee</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-warning text-white">
+              <div class="card-body">
+                <h4 class="card-title">Promatics Technologies</h5>
+                  <h6 class="card-subtitle mb-2 "> Location : Ludhiana, India</h6>
+                  <p class="card-text">Duration : 1 Month</p>
+                  <p class="card-text">Role : Laravel Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-danger text-white">
+              <div class="card-body">
+                <h4 class="card-title"> Mandsaur University</h5>
+                  <h6 class="card-subtitle mb-2 "> Location : Mandsaur, India</h6>
+                  <p class="card-text">Duration : currently Working</p>
+                  <p class="card-text">Role : Assistant Professor </p>
+              </div>
+            </div>
+          </div>
+         
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container col-md-10 offset-md-2">
+        <h2>About Me</h2>
+        <p>My name is Ashish Kumar Anand, and I currently work as an Assistant Professor at Mandsaur University, Madhya
+          Pradesh. I hold a Master's degree in Computer Applications (MCA) and specialize in web development.</p>
+        <p>My passion lies in creating dynamic and innovative web solutions that enhance user experience and solve
+          real-world problems. With a strong foundation in computer science and years of experience in front-end and
+          back-end development, I aspire to pursue a Ph.D. to further my knowledge and contribute to the field of web
+          development.</p>
+        <p>Outside of work, I enjoy indulging in my hobbies. I love listening to music as it helps me relax and find
+          inspiration. Travelling is another passion of mine; exploring new places, experiencing different cultures, and
+          meeting new people energizes me. Additionally, biking is a great way for me to stay active and enjoy the
+          outdoors.</p>
+        <p>I am dedicated to continuous learning and growth, both personally and professionally, in this ever-evolving
+          field. Feel free to reach out to me if you have any inquiries or opportunities for collaboration.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container col-md-10 offset-md-2">
+        <h2>Contact Me On</h2>
+        <!-- Your contact form or information will go here -->
+        <!-- Instagram Button -->
+        <a href="https://www.instagram.com/ashish.kr.anand/" target="_blank" class="social-btn instagram"><i
+            class="icon-instagram"></i></a>
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/akanand0125/" target="_blank" class="social-btn linkedin"><i
+            class="icon-linkedin"></i></a>
+        <!-- GitHub Button -->
+        <a href="https://github.com/ashishkranand" target="_blank" class="social-btn github"><i
+            class="icon-github"></i></a>
+        <!-- Gmail Button -->
+        <a href="mailto:ashishraj5296@gmail.com" target="_blank" class="social-btn gmail"><i
+            class="icon-envelope"></i></a>
+        <!-- Phone Button -->
+        <a href="tel:+918434463000" class="social-btn phone"><i class="icon-phone"></i></a>
+
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
